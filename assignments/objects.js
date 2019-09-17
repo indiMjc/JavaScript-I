@@ -100,6 +100,13 @@ const mom = {
     age: 50,
     speak: function() {
       return this.name;
+    },
+    grandKid: {
+      name: 'Sam',
+      age: 30,
+      speak: function() {
+        return this.name;
+      }
     }
    }
   };
@@ -111,11 +118,11 @@ console.log(mom.name);
 // Log the child's age
 console.log(mom.kid.age);
 // // Log the name and age of the grandchild
-// console.log(mom.kid.grandKid.name);
-// console.log(mom.kid.grandKid.age);
+console.log(mom.kid.grandKid.name);
+console.log(mom.kid.grandKid.age);
 // Have the parent speak
 console.log(mom.speak());
 // Have the child speak
 console.log(mom.kid.speak());
 // // Have the grandchild speak
-// console.log(mom.kid.grandKid.speak());
+console.log(mom.kid.grandKid.speak());
